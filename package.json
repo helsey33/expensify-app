@@ -9,8 +9,8 @@
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest --watch",
-    "start":"node server/server.js",
-    "heroku-postbuild":"npm run build:prod"
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "Helsey",
   "license": "ISC",
@@ -27,6 +27,7 @@
     "moment": "^2.22.0",
     "node-sass": "^4.8.3",
     "normalize.css": "^8.0.0",
+    "numeral": "^2.0.6",
     "react": "^16.0.0",
     "react-addons-shallow-compare": "^15.6.2",
     "react-dates": "^16.6.0",
@@ -39,10 +40,9 @@
     "style-loader": "^0.20.3",
     "uuid": "^3.2.1",
     "webpack": "^3.1.0"
-  
   },
   "devDependencies": {
     "jest": "^20.0.4",
-      "webpack-dev-server": "^2.5.1"
+    "webpack-dev-server": "^2.5.1"
   }
 }
