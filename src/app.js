@@ -11,10 +11,6 @@ import 'normalize.css/normalize.css';
 import './styles/style.scss';
        
 const store=configureStore();
-store.dispatch(addExpense({ description: 'Water Bill', amount: 300, createdAt: 300000 }));
-store.dispatch(addExpense({ description: 'Gas Bill', amount: 800, createdAt: 2000 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 109500, createdAt: 1000 }));
-
 
 
 const jsx=(
