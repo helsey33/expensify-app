@@ -62,39 +62,41 @@ export default class ExpenseForm extends React.Component {
 
     render(){
         return(
-          <div>
-          {this.state.error && <p>{this.state.error}</p>}
-            <form onSubmit={this.onSubmit} >
-                    <input type="text" placeholder="Description" 
+        
+            <form className="form" onSubmit={this.onSubmit} >
+                {this.state.error && <p>{this.state.error}</p>}
+                    <input type="text" placeholder="Description" className="text-input"
                  value={this.state.description}
                  onChange={this.DescriptionChange}
                 />
-                <input type="text" placeholder="amount"
-                
-                onChange={this.onAmountChange}
+               <div className="aNd">
+                    <input type="text" placeholder="Amount"
+                        className="text-input"
+                        onChange={this.onAmountChange}
                         value={this.state.amount}
-                />
+                    />
 
-                <SingleDatePicker 
-                date={this.state.createdAt}
-                onDateChange={this.onDateChange}
-                focused={this.state.calenderFocused}
-                onFocusChange={this.onFocusChange}
-                numberOfMonths={1}
-                isOutsideRange={()=>false}
-                />&nbsp;
-                <br/>
+                    <SingleDatePicker
+                        date={this.state.createdAt}
+                        onDateChange={this.onDateChange}
+                        focused={this.state.calenderFocused}
+                        onFocusChange={this.onFocusChange}
+                        numberOfMonths={1}
+                        isOutsideRange={() => false}
+                    />
+               </div>
                 <textarea placeholder="Add a note for your expenses(optional)"
+                class="textarea"
                  cols="30" rows="5"
                  value={this.state.note}
                  onChange={this.NoteChange}
                  ></textarea>
-                 <button>Add Expense</button>
+                <div>
+                    <button className="button">Add Expense</button>
+                </div>
                  
             </form>
 
-               
-          </div>
         );
     }
 };

@@ -2,9 +2,15 @@ html{
     font-size: 83.333%;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Helvetica',Arial,sans-serif;
     font-size: $m-size;
+    color:$dark-grey;
+    line-height:1.6;
 }
 button{
     cursor: pointer;
@@ -15,4 +21,8 @@ button:disabled{
 
 .is-active{
     font-weight: bold;
+}
+
+.space{
+    height:100px;
 }
