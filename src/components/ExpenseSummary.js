@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import filteredExpenses from './../selectors/expenses';
 import expenseTotal from './../selectors/expenseTotal';
 import numeral from 'numeral'
+
 const ExpenseSummary = (props)=>{
     const amt= expenseTotal(props.expenses);
     return (
