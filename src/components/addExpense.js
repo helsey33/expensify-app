@@ -8,7 +8,7 @@ const startAddExpensePage = (props) => (
         <h1>Expense Form</h1>
         <ExpenseForm onSubmit={(expense)=>{
             props.dispatch(startAddExpense(expense));
-            props.history.push('/');
+            props.history.push('/dashboard');
         }}/>
     </div>
 );
